@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Media Content Analyzer</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="card">
+      <h1>📄 Social Media Content Analyzer</h1>
+      <p>Upload a PDF or image and extract the text instantly.</p>
+
+      <div id="drop-area" class="drop-area">
+        <input type="file" id="fileElem" accept=".pdf,.jpg,.jpeg,.png" hidden>
+        <label for="fileElem" class="file-label">Choose a file</label>
+        <p>or drag & drop files here</p>
+      </div>
+
+      <button id="uploadBtn">Upload & Extract</button>
+
+      <div id="loading" class="loading hidden">
+        ⏳ Processing...
+      </div>
+
+      <div id="result" class="result hidden">
+        <h3>📝 Extracted Text</h3>
+        <pre id="extractedText"></pre>
+        <a id="downloadLink" class="download-btn hidden">Download Extracted Text</a>
+      </div>
+
+      <div id="error" class="error hidden"></div>
+
+      <footer>
+        <small>Extract your text by just uploading the doc</small>
+      </footer>
+    </div>
+  </div>
+
+  <script src="/static/js/script.js"></script>
+</body>
+</html>
