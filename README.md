@@ -63,25 +63,30 @@ pdfplumber / pdf2image — PDF processing
 
 HTML, CSS, JavaScript — Frontend
 
-📦 Project Structure
-social-media-content-analyzer/
-│── app.py
-│── requirements.txt
-│── LICENSE
-│── .gitignore
-│── README.md
-│── templates/
+## 📦 Project Structure
+
+```
+📦 social-media-content-analyzer
+├── app.py
+├── requirements.txt
+├── LICENSE
+├── .gitignore
+├── README.md
+├── templates/
 │   └── index.html
-│── static/
+├── static/
 │   ├── css/
 │   │   └── style.css
 │   ├── js/
 │   │   └── script.js
 │   └── screenshots/
+│       ├── choose_file.png
 │       ├── homepage.png
 │       └── extracted_text.png
-│── uploads/
+├── uploads/
 │   └── .gitkeep
+```
+
 
 🧑‍💻 How to Run the Project
 1. Install dependencies
@@ -105,5 +110,7 @@ http://127.0.0.1:5000
 **📄 License**
 
 This project is protected under the MIT License.
+
+
 **Author**
 **Tayyaba Khan**
